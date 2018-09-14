@@ -18,7 +18,7 @@ Creating a new branch is quick & simple.
 我在探听谁将亲你在怀内
 可惜你心不会装载
 =======
-Creating a new branch is quick AND simple.
+Creating a new branch is quick and simple.
 你讽刺我人活于五十年代
 不用再的一个深爱
 >>>>>>> dev
