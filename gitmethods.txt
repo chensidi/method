@@ -1,0 +1,34 @@
+1.git init //初始化 使用 ls -ah查看隐藏文件
+2.git global user.name "jacky"
+3.git global user.email "2541012495@qq.com"
+4.git add //工作区加到暂存区
+5.git commit -m "描述" //提交
+6.git reset --hard *** //回撤到指定版本
+7.git log (--pretty=oneline) //查看Git所有提交日志
+8.git reflog //查看所有git指令历史
+9.git diff //在修改后，但没有add/commit，查看修改内容
+10.git status //查看状态
+11.git checkout -- 文件名 //丢弃工作区的修改  两种情况，
+	1.文件被修改了，但是没有add或commit，此时使用该命令会返回上次commit后的状态
+	2.文件被修改了,同时也add入暂存区，之后又做了修改,此时使用命令会返回add之前的状态
+	本质是将版本库里的文件抽出替换工作区的文件，无论修改还是删除
+
+创建SSH Key：windows下打开git bash,输入 ssh-keygen -t rsa -C '2541012495@qq.com',会出现 .id_rsa.pub(公钥）和id_rsa(私钥)
+然后登陆GitHub，在设置里面填写title，key(就是id_rsa.pub),
+然后新建GitHub仓库
+然后进入需要同步的文件夹，右键Git Bash，输入 git remote add origin git@github.com:chensidi/仓库名.git
+再输入 git push -u origin master(第一次需要-u，之后无需)
+
+克隆：
+1.建立新的github仓库,名称随意(new)，勾选Initialize this repository with a README，自动生成.md文件
+2.克隆到本地仓库 git clone git@github.com:chensidi/new.git,.md文件就拿下来了，其实不必一定要md文件，只要github仓库有的都可以拷贝。
+
+协议：
+1.https:https://github.com/chensidi/xxx.git
+2.ssh:git@github.com:chensidi/xxx.git
+
+分支：
+1.快捷创建。git checkout -b dev === git branch dev , git checkout dev
+2.git branch // 查看所有分支，* 表示当前分支
+3.git merge dev // 将dev分支合并到当前master分支。
+4.git branch -d dev //删除分支
