@@ -4,7 +4,7 @@
 4.git add //工作区加到暂存区
 5.git commit -m "描述" //提交
 6.git reset --hard *** //回撤到指定版本
-7.git log (--pretty=oneline) //查看Git所有提交日志
+7.git log (--pretty=oneline --abbrev-commit) //查看Git所有提交日志
 8.git reflog //查看所有git指令历史
 9.git diff //在修改后，但没有add/commit，查看修改内容
 10.git status //查看状态
@@ -30,5 +30,34 @@
 分支：
 1.快捷创建。git checkout -b dev === git branch dev , git checkout dev
 2.git branch // 查看所有分支，* 表示当前分支
-3.git merge dev // 将dev分支合并到当前master分支。
+3.git merge dev | git merge -m '描述' dev// 将dev分支合并到当前master分支。
 4.git branch -d dev //删除分支
+
+分支管理策略
+1.git merge --no-ff -m '描述' dev // 在删除分支后可查看历史合并记录
+bug分支
+1.git stash //隐藏当前工作区，待其他分支修复完成之后回到当前工作区
+2.git stash pop //恢复之前工作区，干掉stash
+3.git stash apply,git stash drop //同上，只是aplly可以看到stash内容并不删除
+
+强行删除未合并分支
+git branch -D dev
+
+查看远程库信息
+git remote -v
+git push origin dev //上传到远程库的分支
+git checkout -b dev origin/dev //创建本地和远程对应的分支
+git branch --set-upstream-to=origin/dev dev //指定本地dev分支与远程origin/dev分支的链接
+或者 git branch --set-upstream dev origin/dev
+git rebase //把操作历史变成一条历史
+
+标签管理
+1.创建标签 git tag v1.0 或者更详细的 git tag -a v.10 -m 'this is v1.0'
+默认给最后一次commit的版本打标签
+若要给之前的打，则git tag v0.9 xxxx(指针代号) 或者 git tag -a v0.9 -m 'this is v0.9' xxxx(指针代号)
+2.展示标签信息 git show v1.0
+3.删除标签 git tag -d v1.0
+4.推送到远程 git push origin v1.0 | git push origin --tag （一次性）
+5.删除远程标签 
+	先删除本地标签，git tag -d v1.0
+	在从远程删除 git push origin:refs/tags/v1.0
