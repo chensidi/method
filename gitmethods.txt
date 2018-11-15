@@ -1,63 +1,64 @@
-1.git init //³õÊ¼»¯ Ê¹ÓÃ ls -ah²é¿´Òş²ØÎÄ¼ş
+1.git init //åˆå§‹åŒ– ä½¿ç”¨ ls -ahæŸ¥çœ‹éšè—æ–‡ä»¶
 2.git global user.name "jacky"
 3.git global user.email "2541012495@qq.com"
-4.git add //¹¤×÷Çø¼Óµ½Ôİ´æÇø
-5.git commit -m "ÃèÊö" //Ìá½»
-6.git reset --hard *** //»Ø³·µ½Ö¸¶¨°æ±¾
-7.git log (--pretty=oneline --abbrev-commit) //²é¿´GitËùÓĞÌá½»ÈÕÖ¾
-8.git reflog //²é¿´ËùÓĞgitÖ¸ÁîÀúÊ·
-9.git diff //ÔÚĞŞ¸Äºó£¬µ«Ã»ÓĞadd/commit£¬²é¿´ĞŞ¸ÄÄÚÈİ
-10.git status //²é¿´×´Ì¬
-11.git checkout -- ÎÄ¼şÃû //¶ªÆú¹¤×÷ÇøµÄĞŞ¸Ä  Á½ÖÖÇé¿ö£¬
-	1.ÎÄ¼ş±»ĞŞ¸ÄÁË£¬µ«ÊÇÃ»ÓĞadd»òcommit£¬´ËÊ±Ê¹ÓÃ¸ÃÃüÁî»á·µ»ØÉÏ´ÎcommitºóµÄ×´Ì¬
-	2.ÎÄ¼ş±»ĞŞ¸ÄÁË,Í¬Ê±Ò²addÈëÔİ´æÇø£¬Ö®ºóÓÖ×öÁËĞŞ¸Ä,´ËÊ±Ê¹ÓÃÃüÁî»á·µ»ØaddÖ®Ç°µÄ×´Ì¬
-	±¾ÖÊÊÇ½«°æ±¾¿âÀïµÄÎÄ¼ş³é³öÌæ»»¹¤×÷ÇøµÄÎÄ¼ş£¬ÎŞÂÛĞŞ¸Ä»¹ÊÇÉ¾³ı
+4.git add //å·¥ä½œåŒºåŠ åˆ°æš‚å­˜åŒº
+5.git commit -m "æè¿°" //æäº¤
+6.git reset --hard *** //å›æ’¤åˆ°æŒ‡å®šç‰ˆæœ¬
+7.git log (--pretty=oneline --abbrev-commit) //æŸ¥çœ‹Gitæ‰€æœ‰æäº¤æ—¥å¿—
+8.git reflog //æŸ¥çœ‹æ‰€æœ‰gitæŒ‡ä»¤å†å²
+9.git diff //åœ¨ä¿®æ”¹åï¼Œä½†æ²¡æœ‰add/commitï¼ŒæŸ¥çœ‹ä¿®æ”¹å†…å®¹
+10.git status //æŸ¥çœ‹çŠ¶æ€
+11.git checkout -- æ–‡ä»¶å //ä¸¢å¼ƒå·¥ä½œåŒºçš„ä¿®æ”¹  ä¸¤ç§æƒ…å†µï¼Œ
+	1.æ–‡ä»¶è¢«ä¿®æ”¹äº†ï¼Œä½†æ˜¯æ²¡æœ‰addæˆ–commitï¼Œæ­¤æ—¶ä½¿ç”¨è¯¥å‘½ä»¤ä¼šè¿”å›ä¸Šæ¬¡commitåçš„çŠ¶æ€
+	2.æ–‡ä»¶è¢«ä¿®æ”¹äº†,åŒæ—¶ä¹Ÿaddå…¥æš‚å­˜åŒºï¼Œä¹‹ååˆåšäº†ä¿®æ”¹,æ­¤æ—¶ä½¿ç”¨å‘½ä»¤ä¼šè¿”å›addä¹‹å‰çš„çŠ¶æ€
+	æœ¬è´¨æ˜¯å°†ç‰ˆæœ¬åº“é‡Œçš„æ–‡ä»¶æŠ½å‡ºæ›¿æ¢å·¥ä½œåŒºçš„æ–‡ä»¶ï¼Œæ— è®ºä¿®æ”¹è¿˜æ˜¯åˆ é™¤
 
-´´½¨SSH Key£ºwindowsÏÂ´ò¿ªgit bash,ÊäÈë ssh-keygen -t rsa -C '2541012495@qq.com',»á³öÏÖ .id_rsa.pub(¹«Ô¿£©ºÍid_rsa(Ë½Ô¿)
-È»ºóµÇÂ½GitHub£¬ÔÚÉèÖÃÀïÃæÌîĞ´title£¬key(¾ÍÊÇid_rsa.pub),
-È»ºóĞÂ½¨GitHub²Ö¿â
-È»ºó½øÈëĞèÒªÍ¬²½µÄÎÄ¼ş¼Ğ£¬ÓÒ¼üGit Bash£¬ÊäÈë git remote add origin git@github.com:chensidi/²Ö¿âÃû.git
-ÔÙÊäÈë git push -u origin master(µÚÒ»´ÎĞèÒª-u£¬Ö®ºóÎŞĞè)
+åˆ›å»ºSSH Keyï¼šwindowsä¸‹æ‰“å¼€git bash,è¾“å…¥ ssh-keygen -t rsa -C '2541012495@qq.com',ä¼šå‡ºç° .id_rsa.pub(å…¬é’¥ï¼‰å’Œid_rsa(ç§é’¥)
+ç„¶åç™»é™†GitHubï¼Œåœ¨è®¾ç½®é‡Œé¢å¡«å†™titleï¼Œkey(å°±æ˜¯id_rsa.pub),
+ç„¶åæ–°å»ºGitHubä»“åº“
+ç„¶åè¿›å…¥éœ€è¦åŒæ­¥çš„æ–‡ä»¶å¤¹ï¼Œå³é”®Git Bashï¼Œè¾“å…¥ git remote add origin git@github.com:chensidi/ä»“åº“å.git
+å†è¾“å…¥ git push -u origin master(ç¬¬ä¸€æ¬¡éœ€è¦-uï¼Œä¹‹åæ— éœ€)
 
-¿ËÂ¡£º
-1.½¨Á¢ĞÂµÄgithub²Ö¿â,Ãû³ÆËæÒâ(new)£¬¹´Ñ¡Initialize this repository with a README£¬×Ô¶¯Éú³É.mdÎÄ¼ş
-2.¿ËÂ¡µ½±¾µØ²Ö¿â git clone git@github.com:chensidi/new.git,.mdÎÄ¼ş¾ÍÄÃÏÂÀ´ÁË£¬ÆäÊµ²»±ØÒ»¶¨ÒªmdÎÄ¼ş£¬Ö»Òªgithub²Ö¿âÓĞµÄ¶¼¿ÉÒÔ¿½±´¡£
+å…‹éš†ï¼š
+1.å»ºç«‹æ–°çš„githubä»“åº“,åç§°éšæ„(new)ï¼Œå‹¾é€‰Initialize this repository with a READMEï¼Œè‡ªåŠ¨ç”Ÿæˆ.mdæ–‡ä»¶
+2.å…‹éš†åˆ°æœ¬åœ°ä»“åº“ git clone git@github.com:chensidi/new.git,.mdæ–‡ä»¶å°±æ‹¿ä¸‹æ¥äº†ï¼Œå…¶å®ä¸å¿…ä¸€å®šè¦mdæ–‡ä»¶ï¼Œåªè¦githubä»“åº“æœ‰çš„éƒ½å¯ä»¥æ‹·è´ã€‚
 
-Ğ­Òé£º
+åè®®ï¼š
 1.https:https://github.com/chensidi/xxx.git
 2.ssh:git@github.com:chensidi/xxx.git
 
-·ÖÖ§£º
-1.¿ì½İ´´½¨¡£git checkout -b dev === git branch dev , git checkout dev
-2.git branch // ²é¿´ËùÓĞ·ÖÖ§£¬* ±íÊ¾µ±Ç°·ÖÖ§
-3.git merge dev | git merge -m 'ÃèÊö' dev// ½«dev·ÖÖ§ºÏ²¢µ½µ±Ç°master·ÖÖ§¡£
-4.git branch -d dev //É¾³ı·ÖÖ§
+åˆ†æ”¯ï¼š
+1.å¿«æ·åˆ›å»ºã€‚git checkout -b dev === git branch dev , git checkout dev
+2.git branch // æŸ¥çœ‹æ‰€æœ‰åˆ†æ”¯ï¼Œ* è¡¨ç¤ºå½“å‰åˆ†æ”¯
+3.git merge dev | git merge -m 'æè¿°' dev// å°†devåˆ†æ”¯åˆå¹¶åˆ°å½“å‰masteråˆ†æ”¯ã€‚
+4.git branch -d dev //åˆ é™¤åˆ†æ”¯
+5.git push origin :branch_name //åˆ é™¤è¿œç¨‹åˆ†æ”¯
 
-·ÖÖ§¹ÜÀí²ßÂÔ
-1.git merge --no-ff -m 'ÃèÊö' dev // ÔÚÉ¾³ı·ÖÖ§ºó¿É²é¿´ÀúÊ·ºÏ²¢¼ÇÂ¼
-bug·ÖÖ§
-1.git stash //Òş²Øµ±Ç°¹¤×÷Çø£¬´ıÆäËû·ÖÖ§ĞŞ¸´Íê³ÉÖ®ºó»Øµ½µ±Ç°¹¤×÷Çø
-2.git stash pop //»Ö¸´Ö®Ç°¹¤×÷Çø£¬¸Éµôstash
-3.git stash apply,git stash drop //Í¬ÉÏ£¬Ö»ÊÇaplly¿ÉÒÔ¿´µ½stashÄÚÈİ²¢²»É¾³ı
+åˆ†æ”¯ç®¡ç†ç­–ç•¥
+1.git merge --no-ff -m 'æè¿°' dev // åœ¨åˆ é™¤åˆ†æ”¯åå¯æŸ¥çœ‹å†å²åˆå¹¶è®°å½•
+bugåˆ†æ”¯
+1.git stash //éšè—å½“å‰å·¥ä½œåŒºï¼Œå¾…å…¶ä»–åˆ†æ”¯ä¿®å¤å®Œæˆä¹‹åå›åˆ°å½“å‰å·¥ä½œåŒº
+2.git stash pop //æ¢å¤ä¹‹å‰å·¥ä½œåŒºï¼Œå¹²æ‰stash
+3.git stash apply,git stash drop //åŒä¸Šï¼Œåªæ˜¯apllyå¯ä»¥çœ‹åˆ°stashå†…å®¹å¹¶ä¸åˆ é™¤
 
-Ç¿ĞĞÉ¾³ıÎ´ºÏ²¢·ÖÖ§
+å¼ºè¡Œåˆ é™¤æœªåˆå¹¶åˆ†æ”¯
 git branch -D dev
 
-²é¿´Ô¶³Ì¿âĞÅÏ¢
+æŸ¥çœ‹è¿œç¨‹åº“ä¿¡æ¯
 git remote -v
-git push origin dev //ÉÏ´«µ½Ô¶³Ì¿âµÄ·ÖÖ§
-git checkout -b dev origin/dev //´´½¨±¾µØºÍÔ¶³Ì¶ÔÓ¦µÄ·ÖÖ§
-git branch --set-upstream-to=origin/dev dev //Ö¸¶¨±¾µØdev·ÖÖ§ÓëÔ¶³Ìorigin/dev·ÖÖ§µÄÁ´½Ó
-»òÕß git branch --set-upstream dev origin/dev
-git rebase //°Ñ²Ù×÷ÀúÊ·±ä³ÉÒ»ÌõÀúÊ·
+git push origin dev //ä¸Šä¼ åˆ°è¿œç¨‹åº“çš„åˆ†æ”¯
+git checkout -b dev origin/dev //åˆ›å»ºæœ¬åœ°å’Œè¿œç¨‹å¯¹åº”çš„åˆ†æ”¯
+git branch --set-upstream-to=origin/dev dev //æŒ‡å®šæœ¬åœ°devåˆ†æ”¯ä¸è¿œç¨‹origin/devåˆ†æ”¯çš„é“¾æ¥
+æˆ–è€… git branch --set-upstream dev origin/dev
+git rebase //æŠŠæ“ä½œå†å²å˜æˆä¸€æ¡å†å²
 
-±êÇ©¹ÜÀí
-1.´´½¨±êÇ© git tag v1.0 »òÕß¸üÏêÏ¸µÄ git tag -a v.10 -m 'this is v1.0'
-Ä¬ÈÏ¸ø×îºóÒ»´ÎcommitµÄ°æ±¾´ò±êÇ©
-ÈôÒª¸øÖ®Ç°µÄ´ò£¬Ôògit tag v0.9 xxxx(Ö¸Õë´úºÅ) »òÕß git tag -a v0.9 -m 'this is v0.9' xxxx(Ö¸Õë´úºÅ)
-2.Õ¹Ê¾±êÇ©ĞÅÏ¢ git show v1.0
-3.É¾³ı±êÇ© git tag -d v1.0
-4.ÍÆËÍµ½Ô¶³Ì git push origin v1.0 | git push origin --tag £¨Ò»´ÎĞÔ£©
-5.É¾³ıÔ¶³Ì±êÇ© 
-	ÏÈÉ¾³ı±¾µØ±êÇ©£¬git tag -d v1.0
-	ÔÚ´ÓÔ¶³ÌÉ¾³ı git push origin:refs/tags/v1.0
+æ ‡ç­¾ç®¡ç†
+1.åˆ›å»ºæ ‡ç­¾ git tag v1.0 æˆ–è€…æ›´è¯¦ç»†çš„ git tag -a v.10 -m 'this is v1.0'
+é»˜è®¤ç»™æœ€åä¸€æ¬¡commitçš„ç‰ˆæœ¬æ‰“æ ‡ç­¾
+è‹¥è¦ç»™ä¹‹å‰çš„æ‰“ï¼Œåˆ™git tag v0.9 xxxx(æŒ‡é’ˆä»£å·) æˆ–è€… git tag -a v0.9 -m 'this is v0.9' xxxx(æŒ‡é’ˆä»£å·)
+2.å±•ç¤ºæ ‡ç­¾ä¿¡æ¯ git show v1.0
+3.åˆ é™¤æ ‡ç­¾ git tag -d v1.0
+4.æ¨é€åˆ°è¿œç¨‹ git push origin v1.0 | git push origin --tag ï¼ˆä¸€æ¬¡æ€§ï¼‰
+5.åˆ é™¤è¿œç¨‹æ ‡ç­¾ 
+	å…ˆåˆ é™¤æœ¬åœ°æ ‡ç­¾ï¼Œgit tag -d v1.0
+	åœ¨ä»è¿œç¨‹åˆ é™¤ git push origin:refs/tags/v1.0
