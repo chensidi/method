@@ -67,3 +67,6 @@ git rebase //把操作历史变成一条历史
 查看当前用户（global）配置 ===> git config --global --list
 查看当前仓库配置信息 ===> git config --local --list
 查看所有配置 ===》 git config --list
+
+git reset --soft  //不删除工作空间改动代码，撤销commit，不撤销git add .
+git commit --amend // commit注释写错了，只是想改一下注释
