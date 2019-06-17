@@ -70,3 +70,5 @@ git rebase //把操作历史变成一条历史
 
 git reset --soft  //不删除工作空间改动代码，撤销commit，不撤销git add .
 git commit --amend // commit注释写错了，只是想改一下注释
+
+git reset HEAD test.txt  // 撤销add
